@@ -11,7 +11,7 @@ class randomList:
             self.__intList.append(randrange(100)+1)
             
     def getCount(self):
-        return self.__count;
+        return self.__count
     
     def getTotal(self):
         total = 0
@@ -37,12 +37,12 @@ while(menu):
     numberList = randomList(intlist)
     print("\nRandom Integers")
     print(f'='*15)
-    print("Integers: ",numberList)
-    print("Count: ",numberList.getCount())
-    print("Total: ",numberList.getTotal())
-    print("Average: ",numberList.getAverage())
+    print(f"{'Integers:':<11}{numberList}")
+    print(f"{'Count:':<11}{numberList.getCount()}")
+    print(f"{'Total:':<11}{numberList.getTotal()}")
+    print(f"{'Average:':<11}{round(numberList.getAverage(),2)}")
 
-    choice = input("\nContinue? (y/n):")
+    choice = input("\nContinue? (y/n): ")
     if(choice=='n'):
         menu = False
 
