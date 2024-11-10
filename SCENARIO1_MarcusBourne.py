@@ -28,19 +28,19 @@ def main():
     while True:
         choice = input('Rectangle or square? (r/s): ').lower()
         if choice == 'r':
-            height = int(input('{:<10}: '.format('Height')))
-            width = int(input('{:<10}: '.format('Width')))
+            height = int(input(f"{'Height:':<11}"))
+            width = int(input(f"{'Width:':<11}"))
             r = Rectangle(height, width)
             
-            print('{:<10}: {}'.format('Perimeter', r.getPerimeter()))
-            print('{:<10}: {}'.format('Area', r.getArea()))
+            print(f"{'Perimeter:':<11}{r.getPerimeter()}")
+            print(f"{'Area:':<11}{r.getArea()}")
             print(r)
         elif choice == 's':
-            side = int(input('{:<10}: '.format('Length')))
+            side = int(input(f"{'Length:':<11}"))
             s = Square(side)
             
-            print('{:<10}: {}'.format('Perimeter', s.getPerimeter()))
-            print('{:<10}: {}'.format('Area', s.getArea()))
+            print(f"{'Perimeter:':<11}{s.getPerimeter()}")
+            print(f"{'Area:':<11}{s.getArea()}")
             print(s)
         else:
             print('Error: Invalid choice')
