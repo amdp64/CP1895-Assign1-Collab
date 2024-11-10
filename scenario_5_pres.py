@@ -1,6 +1,6 @@
 # Presentation component
-# Menu selection stuff
-# Calls to App
+# Menu selection
+# Calls to Application file
 
 from scenario_5_app import commandLogic
 
@@ -14,11 +14,11 @@ def command():
     print(f"{'add':<9}- Add a task")
     print(f"{'complete':<9}- Complete a task")
     print(f"{'delete':<9}- Delete a task")
-    print(f"{'exit':<9}- Exit program\n")
+    print(f"{'exit':<9}- Exit program")
 
 def main():
     command()
-    # Contained within app
+    # Contained within Application file
     commandLogic()
 
 if __name__ == "__main__":
